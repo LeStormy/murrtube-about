@@ -12,8 +12,6 @@
           h1.is-size-2-mobile = @post.title
           p.is-size-5.has-text-lighter-1
             span = @post.created_at.strftime("%B %d, %Y")
-            span = " · "
-            span = "by #{@post.author}"
       .pt-3.w-full
         = @post.body.html_safe
 
