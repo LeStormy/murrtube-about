@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get 'advertise', to: 'application#advertise'
 
   resources :posts, path: 'news'
+  get 'feedback', to: 'feedbacks#new'
+  post 'feedbacks', to: 'feedbacks#create'
 end

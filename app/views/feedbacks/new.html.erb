@@ -1,0 +1,35 @@
+<% content_for :title, "Feedback - Murrtube" %>
+<div class="columns">
+  <div class="column is-half-desktop is-offset-one-quarter-desktop is-two-thirds-tablet is-offset-2-tablet">
+    <div class="py-4">
+      <div class="columns is-vcentered">
+        <div class="column is-full-tablet is-9-desktop">
+          <h1 class="is-size-1 has-text-centered has-font-walter has-text-weight-bold">Suggest some<br />cool ideas</h1>
+        </div>
+        <div class="column is-full-tablet is-3-desktop">
+          <figure class="image mx-auto is-128x128">
+            <img src=<%= asset_path('android-icon-192x192.png') %> />
+          </figure>
+        </div>
+      </div>
+      <div class="box has-background-murrtube-dark is-shadowless">
+        <h3 class="pb-4 is-size-4 has-font-walter">Ask us for new features or to fix old ones!</h3>
+        <%= form_for Feedback.new do |form| %>
+          <div class="field">
+            <label class="label">What did you have in mind</label>
+            <div class="control">
+              <%= form.text_area :body, class: 'textarea text-input w-full', required: true %>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Telegram Username<br/>(leave this blank if you don't want us to get in touch with you about this)</label>
+            <div class="control">
+              <%= form.text_field :telegram_username, class: 'input text-input w-full' %>
+            </div>
+          </div>
+          <%= form.submit "Submit!", class: 'button is-link w-full my-4' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

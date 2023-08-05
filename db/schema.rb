@@ -10,9 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_27_184735) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_05_092457) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "feedbacks", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.text "body"
+    t.string "name"
+    t.string "telegram_username"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
@@ -23,6 +31,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_27_184735) do
     t.datetime "updated_at", null: false
     t.string "image_url"
     t.integer "impressions", default: 0
+  end
+
+  create_table "uses", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.uuid "url_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["url_id"], name: "index_uses_on_url_id"
   end
 
 end

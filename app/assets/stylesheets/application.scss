@@ -22,8 +22,15 @@ $dark-1: '#12121a';
   display: none
 }
 
+.flash-message {
+  position: fixed !important;
+  max-width: 30%;
+  right: 1rem;
+  z-index: 1000;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Walter Turncoat', cursive;  
+  font-family: 'Rajdhani', sans-serif;  
 }
 
 h1 {
@@ -56,7 +63,7 @@ h6 {
 }
 
 .has-font-walter {
-  font-family: 'Walter Turncoat', cursive;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 body {
@@ -95,6 +102,10 @@ body {
 
 .has-white-space-pre-wrap {
   white-space: pre-wrap;
+}
+
+.has-text-link-light {
+  color: #619cff !important;
 }
 
 .has-white-space-pre-line {
