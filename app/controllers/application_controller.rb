@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   def terms
+    puts "\n----\n#{request.env['HTTP_USER_AGENT']}\n----\n"
     
   end
 
