@@ -13,5 +13,6 @@
           p.is-size-5.has-text-lighter-1
             span = @post.created_at.strftime("%B %d, %Y")
       .pt-3.w-full
-        = @post.body.html_safe
+        = render('3')
+        / = @post.body.html_safe
 

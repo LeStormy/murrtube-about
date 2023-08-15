@@ -1,0 +1,320 @@
+<h2 class="pb-4">Upgrades and lessons learned</h2>
+<div class="pt-3">
+  <p class="pb-4">
+    No rest for the team as we keep gathering feedback and suggestions from the
+    community! We've been super thrilled with the warm welcome you all gave to
+    2.0 since we launched it on May 1st this year, but obviously we did not
+    wanna go back to the former mood of "letting things run, and hope for the
+    best"
+  </p>
+  <p class="pb-4">
+    Let's have a little retrospective look on that launch, and then dive into
+    the new stuff that we're releasing today!
+  </p>
+</div>
+<h2 class="py-4">The past 4 months</h2>
+<p class="pb-4">
+  As mentioned earlier, we got mostly positive feedback since the release of
+  2.0. Alongside that release, we made ourselves a pretty nice Murrtube
+  Statistics page, which makes it oh so much simpler to check the app's health
+  and usage. Lemme show you some of that!
+</p>
+<h4 class="py-4">Impressions</h4>
+<figure class="image m-auto is-512">
+  <img
+    src="https://storage.murrtube.net/murrtube-about/murrtube_impressions.png"
+  />
+</figure>
+<div class="has-text-centered pt-3 pb-4">
+  <p>This is the video impressions counts</p>
+</div>
+<p class="pb-4">
+  On the top, we got the weedly number of videos that have been viewed, and at
+  the bottom is the grand total.<br />
+  That giant spike in May is a bit of a fluke. During the first 3 days of 2.0,
+  there was a bug that would count impressions twice most of the times. What's
+  cool to see tho is that nevertheless, our weekly impressions count plateau-ed
+  higher than before the release, and recently even more!
+  <br />
+  <br />
+  BTW, yea, impressions were only implemented in early 2022, so we don't have
+  impressions data for before that, only unique view counts.
+</p>
+<h4 class="py-4">Traffic</h4>
+<figure class="image m-auto is-512">
+  <img
+    src="https://storage.murrtube.net/murrtube-about/murrtube_countries.png"
+  />
+</figure>
+<div class="has-text-centered pt-3 pb-4">
+  <p>This is the provenance of traffic on Murrtube</p>
+</div>
+<p class="pb-4">
+  Quite a big change here! It used to be more balanced between Germany and the
+  USA, but since the latest release, Americans have taken a big lead in the
+  fapping contest!
+  <br />
+  <br />
+  We do mind your privacy with passion, and this data is computed in a
+  completely anonymous way, so it can become a simple number in a country
+  column.
+</p>
+<h4 class="py-4">Likes and Comments</h4>
+<figure class="image m-auto is-512">
+  <img
+    src="https://storage.murrtube.net/murrtube-about/murrtube_comments.png"
+  />
+</figure>
+<div class="has-text-centered pt-3 pb-4">
+  <p>This is the comments number on Murrtube</p>
+</div>
+<p class="pb-4">
+  This is a place were we failed a bit in my opinion. But it was foreseeable. We
+  do notice on a much milder level that the likes count have been following a
+  similar trend.
+  <br />
+  <br />
+  With 2.0, we took the unanimous decision to hack through the comment section,
+  no more replies, it's less visible, etc.. And this has inevitably driven
+  engagement down. Y'all come to watch the videos, but don't feel it necessary
+  or practical to engage with the content.
+  <br />
+  This is a big debate for now and we will come up with something, of that I'm
+  confident!
+</p>
+<h4 class="py-4">Storage capacity</h4>
+<figure class="image m-auto is-512">
+  <img src="https://storage.murrtube.net/murrtube-about/murrtube_minutes.png" />
+</figure>
+<div class="has-text-centered pt-3 pb-4">
+  <p>This is the total content length Murrtube</p>
+</div>
+<p class="pb-4">
+  The other good news! With all the optimizations we did on storage and
+  encoding, even though we provide better video quality, we have freed up
+  massive space on our storage server!
+  <br />
+  <br />
+  We estimate, with current encoding settings, that we can accomodate up to
+  75000 minutes of porn. That's one hell of a fapping session. With our previous
+  settings, we could have barely reached 40K.
+  <br />
+  That's still a lot of margin, but margin is comfortable! Even more so knowing
+  that we're only sitting at 20% capacity for now!
+</p>
+<h4 class="py-4">Pretty nice right?</h4>
+<p class="pb-4">
+  We're super happy about how this turned out, after all, re-writing Murrtube
+  from scratch was quite a piece of work! It brings a lot of joy to see that
+  this was the right direction to go :)
+  <br />
+  <br />
+  But as I said at the beginning, that doesn't mean we should stop here. We have
+  some features small and huge planned! Some of these are really huge and we're
+  aiming for a 2024 release, they require a lot more planning and work. Some
+  others are mostly quality of life, usability, etc... But we'll keep all that a
+  surprise!
+</p>
+
+<h2 class="py-4">The new stuff</h2>
+<div class="pt-3">
+  <div class="pb-4">
+    We're releasing now what we will call Murrtube 2.1. It's an smaller update
+    with some requested features, bug fixes, and a bit of polishing.
+    <br />
+    <br />
+    <div class="has-text-centered pb-4">
+      <strong>Let's dive in!</strong>
+    </div>
+  </div>
+</div>
+
+<h4 class="py-4">The random section</h4>
+<figure class="image m-auto is-512">
+  <img src="https://storage.murrtube.net/murrtube-about/random_section.png" />
+</figure>
+<div class="py-4"></div>
+<p class="pb-4">
+  This is one you probably already know about because we actually deployed it
+  around a week ago as a test. The screenshot is from our staging server so
+  don't mind the placeholder thumbnails >.>
+  <br />
+  We liked what we did with the rotating trending section on a front page, as it
+  allows for more trending stuff to stick out aven after some time. But it was
+  suggested to us that it would be nice to have the ability to discover more
+  videos, older, or that didn't apply to the trending anymore.
+  <br />
+  <br />
+  So we simply added a Random Videos section on the front page! 5 randomly
+  selected videos from the entire library, refreshed any time you land on that
+  page! Good way to discover some lost gems :3
+</p>
+
+<h4 class="py-4">Social Media on your profile</h4>
+<figure class="image m-auto is-512">
+  <img src="https://storage.murrtube.net/murrtube-about/social_media.png" />
+</figure>
+<div class="py-4"></div>
+<p class="pb-4">
+  This feature was added (a few days ago actually) because we needed it for the
+  next feature we will present. Essentially, anyone can now link their social
+  media on their profile, with pretty logo icons for clarity. We have opted for
+  Twitter, BlueSky, Telegram and OnlyFans. Not JustForFans, sorry, couldn't find
+  an official version of their logo that fit into a circle (if anyone has it,
+  send it our way!)
+  <br />
+  <br />
+  You can set these in your Edit Profile modal, at the bottom!
+</p>
+
+<h4 class="py-4">Get tagged by the bot!</h4>
+<figure class="image m-auto is-512">
+  <img src="https://storage.murrtube.net/murrtube-about/social_tagging.png" />
+</figure>
+<div class="py-4"></div>
+<p class="pb-4">
+  That's what I meant about the previous feature. We had to implement it in
+  order to make this one possible.
+  <br />
+  This is simple: when you set your social media handles, you can decide for
+  each if the bot should tag you or not. Now, say you said okay for Twitter
+  sharing, when one of your videos gets published, our Twitter Bot will post a
+  tweet about it. But it will also tag you on Twitter!
+  <br />
+  <br />
+  Hopefully this helps all of you to get even more visibility :)
+</p>
+
+<h4 class="py-4">BlueSky integration</h4>
+<figure class="image m-auto is-512">
+  <img src="https://storage.murrtube.net/murrtube-about/bsky_integ.png" />
+</figure>
+<div class="py-4"></div>
+<p class="pb-4">
+  With the whole Twitter debacle and the growing migration of our communities to
+  the safer haven that is BlueSky, we decided to expand over there too.
+  <br />
+  Murrtube now has a bluesky account :
+  <a
+    href="https://bsky.app/profile/murrtube.net"
+    target="_blank"
+    class="has-text-link-light"
+    >@murrtube.net</a
+  >.
+  <br />
+  We have finished integrating our automation process there, so our account will
+  post about newly published videos on BlueSky as well. And just like for
+  Twitter, you can decide to be tagged on our posts too!
+  <br />
+  <br />
+  BTW, this integration uses an in-house micro python API, made with Flask,
+  deployed on our servers, and based on the BlueSky documentation.
+  <br />It allows us to create BSky posts with a simple HTTParty call (basically
+  a cURL call). You can find the repo for this
+  <a
+    href="https://github.com/LeStormy/bluesky"
+    target="_blank"
+    class="has-text-link-light"
+    >right here!</a
+  >
+</p>
+
+<h4 class="py-4">A new video player</h4>
+<p class="pb-4">
+  We went a bit overboard with 2.0, and decided to go with a full featured
+  video.js player, and on top of that, it was poorly implemented, which would
+  cause slowness of the whole app, and for video switching.
+  <br />
+  So the more reasonable move was to go back to a classic HTML5 video tag, with
+  a super tiny bit of JS to handle our HLS files. Long story short : Back to a
+  simpler, more efficient video player!
+</p>
+
+<h4 class="py-4">Get creative in your descriptions</h4>
+<figure class="image m-auto is-512">
+  <img src="https://storage.murrtube.net/murrtube-about/mtube_desc.png" />
+</figure>
+<div class="py-4"></div>
+<p class="pb-4">
+  Well, creative is a big word. We have just added support for bold, italic and
+  underlined text in video descriptions. It works with as basic as respective
+  html tags for each of those.
+  <br />
+  <br />
+  No, the real upgrade in video descriptions is that we now render your URLs as
+  actual links!
+</p>
+
+<h4 class="py-4">A wee bit of restyling</h4>
+<figure class="image m-auto is-512">
+  <img src="https://storage.murrtube.net/murrtube-about/new_font.png" />
+</figure>
+<div class="py-4"></div>
+<p class="pb-4">
+  Most of everything else is restyling.
+  <br />
+  -> New main font to replace the previous, cute but difficult to read one.
+  <br />
+  -> Some paddings fixes, some backgrounds and contrasts added.
+  <br />
+  -> Tooltips over every 'time ago' information that displays the precise time
+  (of a comment or video publication)
+  <br />
+  -> New styles applied to the various peripheral Murrtube webapps
+</p>
+
+<h2 class="py-4">What now??</h2>
+<div class="pt-3">
+  <div class="pb-4">
+    All of this above is released today, alongside bug fixes and infrastructure
+    updates.
+    <br />
+    As I said above, I don't wanna spoil all of the future updates we have
+    planned, but some of these include :
+    <br />
+    -> Support for multiple languages -> Scheduled video publications ->
+    Featured profile video -> Community and Staff video selection highlights ->
+    Choosing your own video thumbnail
+    <br />
+    <br />
+    And that's just some of the smaller or medium sized ones!
+  </div>
+</div>
+
+<h2 class="py-4">That's all folks!</h2>
+<div class="pt-3">
+  <div class="pb-4">
+    Thank you everyone who made it to the end, and everyone who keeps using and
+    enjoying Murrtube, it's a plasure and a thrill to work on this platform for
+    all of you 💙
+    <br />
+    <br />
+    Don't forget, if you have anything to suggest, some feedback or anything,
+    you can let us know on our
+    <a
+      href="https://about.murrtube.net/feedback"
+      target="_blank"
+      class="has-text-link-light"
+      >Feedback Form</a
+    >. Should you need a more <em>*personal*</em> touch, we're reachable via DM
+    on
+    <a
+      href="https://twitter.com/murrtube"
+      target="_blank"
+      class="has-text-link-light"
+      >Twitter</a
+    >
+    or directly via
+    <a
+      href="https://t.me/MurrtubeSupport"
+      target="_blank"
+      class="has-text-link-light"
+      >Telegram</a
+    >
+    (preferred).
+    <br />
+    <br />
+    That's all for now, have a lovely rest of your day/night, we'll see y'all
+    soon! :3
+  </div>
+</div>
