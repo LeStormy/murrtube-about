@@ -9,10 +9,9 @@
           figure.image.is-128x128
             = image_tag @post.image_url
         .column
-          h1.is-size-2-mobile = @post.title
+          h1.is-size-2-mobile.has-text-weight-bold = @post.title
           p.is-size-5.has-text-lighter-1
             span = @post.created_at.strftime("%B %d, %Y")
       .pt-3.w-full
-        = render('3')
-        / = @post.body.html_safe
+        = @post.body.html_safe
 

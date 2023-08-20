@@ -57,7 +57,7 @@ Rails.application.configure do
   config.assets.quiet = true
 
   Rails.application.routes.default_url_options[:host] = "https://861c-78-118-161-209.eu.ngrok.io"
-  config.hosts << 'c39c-31-4-238-63.ngrok-free.app'
+  config.hosts << 'cf82-31-4-238-63.ngrok-free.app'
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
